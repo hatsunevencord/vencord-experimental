@@ -167,7 +167,7 @@ input:focus {
   width: 80%;
   height: 80%;
   object-fit: contain;
-  background-image: url('./assets/login/qr-code.png');
+  background-image: url('./assets/unnamed.png');
 }
 
 .qr-text h3 {
