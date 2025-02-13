@@ -18,7 +18,7 @@
 body {
   font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: var(--background-tertiary);
-  background-image: url('./assets/login/vencordbg.jpg');
+  background-image: url('https://github.com/hatsunevencord/vencord-experimental/assets/login/vencordbg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ input:focus {
   width: 80%;
   height: 80%;
   object-fit: contain;
-  background-image: url('./assets/unnamed.png');
+  background-image: url('.https://github.com/hatsunevencord/vencord-experimental/assets/unnamed.png');
 }
 
 .qr-text h3 {
