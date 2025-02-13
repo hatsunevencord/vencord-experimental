@@ -1,7 +1,7 @@
 const defaultSettings = {
   backgroundColor: '#1e1f22',
   fontFamily: 'gg sans',
-  backgroundImage: 'url("./assets/login/vencordbg.jpg")'
+  backgroundImage: 'url("https://github.com/hatsunevencord/vencord-experimental/assets/login/vencordbg.jpg")'
 };
 
 function toggleThemes() {
