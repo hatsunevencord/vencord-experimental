@@ -1,0 +1,211 @@
+:root {
+  --brand: #5865f2;
+  --brand-hover: #4752c4;
+  --background-primary: #313338;
+  --background-secondary: #2b2d31;
+  --background-tertiary: #1e1f22;
+  --text-normal: #f2f3f5;
+  --text-muted: #949ba4;
+  --link: #00a8fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--background-tertiary);
+  background-image: url('./assets/login/vencordbg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-normal);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  background-color: var(--background-primary);
+  border-radius: 5px;
+  padding: 32px;
+  width: 784px;
+  display: flex;
+  gap: 32px;
+}
+
+.login-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+label {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.required {
+  color: #ed4245;
+}
+
+input {
+  background-color: var(--background-secondary);
+  border: none;
+  border-radius: 3px;
+  color: var(--text-normal);
+  font-size: 16px;
+  padding: 10px;
+  height: 40px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--brand);
+}
+
+.forgot-password {
+  color: var(--link);
+  font-size: 14px;
+  text-decoration: none;
+  margin: -16px 0 20px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  background-color: var(--brand);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  height: 44px;
+  margin-bottom: 8px;
+  width: 100%;
+  transition: background-color 0.17s ease;
+}
+
+.login-button:hover {
+  background-color: var(--brand-hover);
+}
+
+.register {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.register a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.qr-login {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.qr-container {
+  width: 176px;
+  height: 176px;
+  padding: 8px;
+  background: transparent;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-code {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  background-image: url('./assets/login/qr-code.png');
+}
+
+.qr-text h3 {
+  display: none;
+}
+
+.qr-text p {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.qr-text strong {
+  color: var(--text-normal);
+}
+
+.error-message {
+  color: #ed4245;
+  font-size: 14px;
+  margin: 4px 0;
+  text-align: left;
+  padding: 8px 0;
+}
+
+@media (max-width: 830px) {
+  .login-box {
+    width: 480px;
+  }
+  
+  .qr-login {
+    display: none;
+  }
+}
+
+@media (max-width: 485px) {
+  .login-box {
+    width: 100%;
+    height: 100%;
+    padding: 20px 16px;
+  }
+}
