@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+header {
+  padding: 24px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-content {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.login-button {
+  background: white;
+  padding: 7px 16px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #23272A;
+  text-decoration: none;
+}
+
+.login-button:hover {
+  color: #5865F2;
+}
+
+.open-discord {
+  background: #23272A;
+  color: white;
+  padding: 7px 16px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.open-discord:hover {
+  background: #36393f;
+}
+
+.hero {
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+  height: 626px;
+}
+
+.hero-content {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 24px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 95%;
+  color: #57F287;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.625;
+  color: #57F287;
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.download-button, .browser-button {
+  padding: 16px 32px;
+  border-radius: 28px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.download-button {
+  background: white;
+  color: #23272A;
+}
+
+.download-button:hover {
+  color: #5865F2;
+}
+
+.browser-button {
+  background: #000000;
+  color: #57F287;
+}
+
+.browser-button:hover {
+  background: #1a1a1a;
+}
+
+.hero-images {
+  display: none;
+}
+
+.left-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-100%) translateX(-70px);
+}
+
+.right-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(70px);
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .download-button, .browser-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
